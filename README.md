@@ -177,10 +177,10 @@ The backend exposes RESTful endpoints grouped by feature:
 - POST /api/ai/generate-questions → Generate interview questions & answers (Gemini)
 - POST /api/ai/generate-explanation → Generate a concept explanation (Gemini)
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ```mermaid
-flowchart
+flowchart TD
   User[👤 User] -->|Login/Register| Frontend[Frontend (React)]
   Frontend -->|REST API| Backend[Backend (Express/Node.js)]
 
