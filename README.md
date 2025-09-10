@@ -181,14 +181,14 @@ The backend exposes RESTful endpoints grouped by feature:
 
 ```mermaid
 flowchart TD
-  User[User] -->|Login/Register| Frontend[Frontend (React)]
-  Frontend -->|REST API| Backend[Backend (Express/Node.js)]
+  User -->|Login/Register| Frontend[Frontend: React]
+  Frontend -->|REST API| Backend[Backend: Express/Node.js]
 
-  subgraph API Endpoints
-    AuthAPI[/Auth Routes/] 
-    SessionAPI[/Session Routes/]
-    QuestionAPI[/Question Routes/]
-    AIApi[/AI Routes/]
+  subgraph API_Endpoints
+    AuthAPI[Auth Routes] 
+    SessionAPI[Session Routes]
+    QuestionAPI[Question Routes]
+    AIApi[AI Routes]
   end
 
   Backend --> AuthAPI
