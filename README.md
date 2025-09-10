@@ -180,8 +180,8 @@ The backend exposes RESTful endpoints grouped by feature:
 ## Architecture Overview
 
 ```mermaid
-flowchart TD
-  User[👤 User] -->|Login/Register| Frontend[Frontend (React)]
+flowchart
+  User[User] -->|Login/Register| Frontend[Frontend (React)]
   Frontend -->|REST API| Backend[Backend (Express/Node.js)]
 
   subgraph API Endpoints
@@ -200,8 +200,8 @@ flowchart TD
   QuestionAPI --> Database
   AuthAPI --> Database
 
-  AIApi -->|Generate Q&A| Gemini[Gemini API 🤖]
-  AIApi -->|Fetch Videos| YouTube[YouTube API 🎥]
+  AIApi -->|Generate Q&A| Gemini[Gemini API]
+  AIApi -->|Fetch Videos| YouTube[YouTube API]
 
   Database --> Backend
   Backend --> Frontend
