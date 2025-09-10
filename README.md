@@ -180,7 +180,7 @@ The backend exposes RESTful endpoints grouped by feature:
 ## Architecture Overview
 
 ```mermaid
-flowchart
+flowchart TD
   User[User] -->|Login/Register| Frontend[Frontend (React)]
   Frontend -->|REST API| Backend[Backend (Express/Node.js)]
 
